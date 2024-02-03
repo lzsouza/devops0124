@@ -1,9 +1,9 @@
 pipeline {
     agent any
     environment {
-        DOCKERFILE_WEB = 'Dockerfileweb'       // Nome do Dockerfile para a imagem web
-        DOCKERFILE_DB = 'Dockerfiledb'         // Nome do Dockerfile para a imagem db
-        DOCKERFILE_NGINX = 'Dockerfilenginx'   // Nome do Dockerfile para a imagem nginx
+        DOCKERFILE_WEB = 'dockerfileweb'       // Nome do Dockerfile para a imagem web
+        DOCKERFILE_DB = 'dockerfiledb'         // Nome do Dockerfile para a imagem db
+        DOCKERFILE_NGINX = 'dockerfilenginx'   // Nome do Dockerfile para a imagem nginx
         DOCKER_IMAGE_TAG = 'latest'            // Tag da imagem Docker a ser construída
     }
     stages {
