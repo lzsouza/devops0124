@@ -29,16 +29,15 @@ pipeline {
                 }
             }
         }
- /*       
         stage('Teste Aplicação') {
             steps {
                 // Testes automatizados da aplicação
-		sh 'docker rm -f $(docker ps -a -q)'
+		        sh 'docker rm -f $(docker ps -a -q)'
                 sh 'docker-compose -f docker-compose.yml up -d'
 
                 // Realize os testes nos serviços em execução
                 // Exemplo de teste usando curl para verificar se o serviço web está respondendo
-                sh 'curl -I http://localhost'
+                sh 'curl -I http://localhost:8000'
 
                 sh 'docker-compose -f docker-compose.yml down'
             }
@@ -48,6 +47,5 @@ pipeline {
                 input 'Deseja prosseguir com o Deploy e Push?'
             }
         }
-*/
  }
 }
